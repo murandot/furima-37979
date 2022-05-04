@@ -81,8 +81,8 @@ Things you may want to cover:
 ## addressesテーブル
 | Column                | Type      | Options                        |
 |-----------------------|-----------|--------------------------------|
-| postal_code           | integer   | null: false                    |
-| prefecture            | integer   | null: false                    |
+| postal_code_id        | integer   | null: false                    |
+| prefecture_id         | integer   | null: false                    |
 | city                  | string    | null: false                    |
 | house_number          | string    | null: false                    |
 | building_name         | string    | null: false                    |
