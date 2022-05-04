@@ -34,7 +34,7 @@ Things you may want to cover:
 | email                 | string    | null: false                    |
 | encrypted_password    | text      | null: false, unique: true      |
 | last_name             | string    | null: false                    |
-| first_name            | integer   | null: false                    |
+| first_name            | string    | null: false                    |
 | birthday              | date      | null: false                    |
 
 ### Association
