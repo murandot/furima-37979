@@ -47,7 +47,6 @@ Things you may want to cover:
 ## itemsテーブル
 | Column                | Type      | Options                        |
 |-----------------------|-----------|--------------------------------|
-| image                 | text      | null: false                    |
 | name                  | string    | null: false                    |
 | title                 | string    | null: false                    |
 | content               | text      | null: false                    |
