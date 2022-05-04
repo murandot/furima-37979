@@ -50,11 +50,11 @@ Things you may want to cover:
 | name                  | string    | null: false                    |
 | title                 | string    | null: false                    |
 | content               | text      | null: false                    |
-| category              | string    | null: false                    |
-| status                | string    | null: false                    |
-| fee                   | string    | null: false                    |
-| prefecture            | integer   | null: false                    |
-| schedule              | string    | null: false                    |
+| category_id           | integer   | null: false                    |
+| status_id             | integer   | null: false                    |
+| fee_id                | integer   | null: false                    |
+| prefecture_id         | integer   | null: false                    |
+| schedule_id           | integer   | null: false                    |
 | price                 | integer   | null: false                    |
 | user                  | reference | null: false, foreign_key: true |
 
