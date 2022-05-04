@@ -35,9 +35,7 @@ Things you may want to cover:
 | encrypted_password    | text      | null: false, unique: true      |
 | last_name             | string    | null: false                    |
 | first_name            | integer   | null: false                    |
-| birth_year            | integer   | null: false                    |
-| birth_month           | integer   | null: false                    |
-| birth_day             | integer   | null: false                    |
+| birthday              | date      | null: false                    |
 
 ### Association
 
