@@ -43,26 +43,26 @@ RSpec.describe Item, type: :model do
         expect(@item.errors.full_messages).to include("Category can't be blank")
       end
       it 'status_idが選択されていないため出品できない' do
-        @item.status_id = ''
+        @item.status_id = 1
         @item.valid?
         expect(@item.errors.full_messages).to include("Status can't be blank")
       end
       it 'fee_idが選択されていないため出品できない' do
-        @item.fee_id = ''
+        @item.fee_id = 1
         @item.valid?
         expect(@item.errors.full_messages).to include("Fee can't be blank")
       end
       it 'prefecture_idが選択されていないため出品できない' do
-        @item.prefecture_id = ''
+        @item.prefecture_id = 1
         @item.valid?
         expect(@item.errors.full_messages).to include("Prefecture can't be blank")
       end
       it 'schedule_idが選択されていないため出品できない' do
-        @item.schedule_id = ''
+        @item.schedule_id = 1
         @item.valid?
         expect(@item.errors.full_messages).to include("Schedule can't be blank")
       end
-      it 'priceが選択されていないため出品できない' do
+      it 'priceが空のため出品できない' do
         @item.price = ''
         @item.valid?
         expect(@item.errors.full_messages).to include("Price can't be blank")
@@ -82,7 +82,11 @@ RSpec.describe Item, type: :model do
         @item.valid?
         expect(@item.errors.full_messages).to include("Price is not a number")
       end
+      it 'userが紐づいていなければ出品できない' do
+        @item.user = nil
+        @item.invalid?
+        expect(@item.errors.full_messages).to include("User must exist")
+      end
     end
   end
-
 end
