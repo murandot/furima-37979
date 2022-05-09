@@ -1,9 +1,6 @@
 class ItemsController < ApplicationController
   def index
-<<<<<<< HEAD
-    @items = Item.all.order('created_at DESC')
-=======
->>>>>>> parent of ac41279 (商品の新着順表示機能の実装)
+    @items = Item.all
   end
 
   def new
